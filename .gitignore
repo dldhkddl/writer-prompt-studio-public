@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.실행상태/
+.env.local
+.env.*.local
+tmp/
+*.tsbuildinfo

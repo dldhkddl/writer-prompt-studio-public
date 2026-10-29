@@ -1,0 +1,27 @@
+{
+  "name": "작가-프롬프트-스튜디오",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "test": "vitest",
+    "start": "vite preview"
+  },
+  "dependencies": {
+    "@openai/codex-sdk": "^0.150.1",
+    "@vitejs/plugin-react": "latest",
+    "lucide-react": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "typescript": "latest",
+    "vite": "latest"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.5",
+    "jsdom": "latest",
+    "vitest": "latest"
+  }
+}

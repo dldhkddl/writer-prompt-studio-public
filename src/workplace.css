@@ -1,0 +1,40 @@
+.workplace-heading {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  border-top: 1px solid var(--line);
+  padding-top: 18px;
+  margin-top: 3px;
+}
+
+.workplace-heading strong {
+  display: block;
+  margin-top: 5px;
+  font-size: 13px;
+}
+
+.workplace-heading > span {
+  max-width: 240px;
+  padding: 7px 9px;
+  border-radius: 6px;
+  background: #203e37;
+  color: var(--mint);
+  font-size: 9px;
+  line-height: 1.5;
+  text-align: right;
+}
+
+@media (max-width: 650px) {
+  .workplace-heading {
+    grid-column: auto;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .workplace-heading > span {
+    max-width: none;
+    text-align: left;
+  }
+}

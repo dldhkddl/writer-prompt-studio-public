@@ -1,0 +1,11 @@
+.full-script-card{margin:14px 0;padding:22px;border-color:#4a416b;background:linear-gradient(145deg,#1a1826,#151922)}
+.full-script-head,.full-script-head>div,.full-script-actions{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.full-script-head>div{justify-content:flex-start}.full-script-head h3{margin-top:4px;font-size:17px}.full-script-head small{display:block;margin-top:4px;color:#a9e7cf;font:10px 'DM Mono'}
+.full-script-description{margin:16px 0 10px;color:#8e96a4;font-size:11px}
+.full-script-card>textarea{width:100%;min-height:380px;padding:18px;border:1px solid #34394a;border-radius:10px;background:#0f131b;color:#eeece8;resize:vertical;outline:0;font-size:12px;line-height:1.9;white-space:pre-wrap}
+.full-script-card>textarea:focus{border-color:#8177bd}.full-script-message{margin:10px 0 0;color:#a9e7cf;font-size:10px}
+.full-script-print{display:none}
+.full-script-actions{justify-content:flex-end;margin-top:12px;flex-wrap:wrap}.full-script-actions button:disabled{opacity:.4;cursor:not-allowed}
+.pdf-hint{display:block;margin-top:8px;text-align:right;color:#6f7785;font-size:9px}
+@media(max-width:650px){.full-script-head{align-items:flex-start;flex-direction:column}.full-script-head>button{width:100%;justify-content:center}.full-script-card>textarea{min-height:320px;font-size:16px}.full-script-actions{display:grid;grid-template-columns:1fr 1fr}.full-script-actions button{justify-content:center}.full-script-actions button:last-child{grid-column:1/-1}.pdf-hint{text-align:left}}
+@media print{body *{visibility:hidden!important}.full-script-card,.full-script-card *{visibility:visible!important}.full-script-card{position:absolute;inset:0;width:100%;margin:0;padding:24px;border:0;background:#fff!important;color:#111!important}.full-script-card>textarea{display:none!important}.full-script-print{display:block;white-space:pre-wrap;color:#111;font:11pt/1.7 sans-serif}.full-script-actions,.full-script-head button,.full-script-description,.full-script-message,.pdf-hint{display:none!important}.full-script-head h3,.full-script-head small,.full-script-head p{color:#111!important}}

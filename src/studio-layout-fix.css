@@ -1,0 +1,14 @@
+.scene-column,
+.scene-editor-column {
+  min-width: 0;
+}
+
+.scene-card {
+  width: 100%;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.scene-copy {
+  min-width: 0;
+}

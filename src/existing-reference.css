@@ -1,0 +1,56 @@
+.existing-reference {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  padding: 9px;
+  border: 1px solid #31584d;
+  border-radius: 9px;
+  background: #14241f;
+}
+
+.existing-reference img {
+  width: 52px;
+  height: 52px;
+  flex: 0 0 auto;
+  border-radius: 7px;
+  object-fit: cover;
+}
+
+.existing-reference span {
+  flex: 1;
+  min-width: 0;
+}
+
+.existing-reference strong,
+.existing-reference small {
+  display: block;
+}
+
+.existing-reference strong {
+  color: var(--mint);
+  font-size: 10px;
+}
+
+.existing-reference small {
+  margin-top: 4px;
+  color: #8eaaa1;
+  font-size: 9px;
+}
+
+.existing-reference button {
+  flex: 0 0 auto;
+  padding: 8px 10px;
+  font-size: 9px;
+}
+
+@media (max-width: 650px) {
+  .existing-reference {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .existing-reference button {
+    justify-content: center;
+  }
+}

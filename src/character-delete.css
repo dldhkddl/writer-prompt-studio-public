@@ -1,0 +1,124 @@
+.character-delete-zone {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 26px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+}
+
+.danger-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 10px 13px;
+  border-radius: 8px;
+  border: 1px solid #713a42;
+  background: #2a1b20;
+  color: #f0a4ad;
+  font-size: 11px;
+  font-weight: 700;
+  transition: .2s;
+}
+
+.danger-button:hover {
+  background: #382128;
+  border-color: #a4515e;
+  color: #ffc2c8;
+}
+
+.danger-button.solid {
+  background: #a74350;
+  border-color: #b94b59;
+  color: #fff;
+}
+
+.danger-button.solid:hover {
+  background: #bd4b5a;
+}
+
+.danger-button:disabled,
+.secondary-button:disabled {
+  cursor: not-allowed;
+  opacity: .55;
+  transform: none;
+}
+
+.delete-confirmation {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px;
+  border: 1px solid #5e343b;
+  border-radius: 10px;
+  background: #24191d;
+  color: #ed9da7;
+}
+
+.delete-confirmation > svg {
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.delete-confirmation > div {
+  flex: 1;
+}
+
+.delete-confirmation strong {
+  display: block;
+  font-size: 12px;
+  color: #f3d8dc;
+}
+
+.delete-confirmation p {
+  margin: 6px 0 13px;
+  color: #b89499;
+  font-size: 10px;
+  line-height: 1.7;
+}
+
+.delete-confirmation-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 7px;
+}
+
+.delete-confirmation-actions button {
+  padding: 8px 11px;
+  font-size: 10px;
+}
+
+.character-empty {
+  min-height: 330px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 45px 24px;
+  text-align: center;
+  color: var(--accent);
+}
+
+.character-empty h3 {
+  margin: 14px 0 7px;
+  color: #eceae5;
+}
+
+.character-empty p {
+  margin: 0 0 20px;
+  color: #858d9b;
+  font-size: 11px;
+}
+
+@media (max-width: 650px) {
+  .delete-confirmation-actions {
+    flex-direction: column-reverse;
+  }
+
+  .delete-confirmation-actions button {
+    width: 100%;
+    min-height: 44px;
+    font-size: 12px;
+  }
+}

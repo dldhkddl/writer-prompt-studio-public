@@ -1,0 +1,21 @@
+.character-options {
+  margin-top: 18px;
+  padding: 16px;
+  border: 1px solid #2a3140;
+  border-radius: 9px;
+  background: #111620;
+}
+
+.character-options-note {
+  grid-column: 1 / -1;
+  margin: -2px 0 0;
+  color: #7f8795;
+  font-size: 9px;
+  line-height: 1.65;
+}
+
+@media (max-width: 650px) {
+  .character-options-note {
+    grid-column: auto;
+  }
+}
